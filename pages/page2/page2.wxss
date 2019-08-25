@@ -1,0 +1,34 @@
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #f9f9f9;
+}
+.butclass{
+    margin-top: 100px;
+}
+.btc{
+    border-left: 1px solid blue ;
+    font-family: "微软雅黑 Light";
+    font-weight: bold;
+    border-right: 1px solid red;
+    color: #000000;
+    border-top: 1px solid red;
+    border-bottom: 1px solid blue;
+    background-color: blanchedalmond;
+}
+page{
+    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566407405487&di=55dcac1bafc5ddf5def0c1b3ce76a171&imgtype=0&src=http%3A%2F%2Fs9.rr.itc.cn%2Fr%2FwapChange%2F20169_13_19%2Fa1fy1i5871988960855.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

@@ -1,0 +1,457 @@
+<picker mode="selector" class="picker" value="{{index}}" range="{{array}}" bindchange="bindPickerChange">
+    <view class="pickeritem">{{array[index]}}</view>
+</picker>
+<view class="table">
+    <view class="tr1">
+        <view class="td1" id="tr11">
+        </view>
+        <view class="td1" id="tr12">
+            <text>Sun</text>
+            <text>xx-xx</text>
+        </view>
+        <view class="td1" id="tr11">
+            <text>Mon</text>
+            <text>xx-xx</text>
+        </view>
+        <view class="td1" id="tr12">
+            <text>Tue</text>
+            <text>xx-xx</text>
+        </view>
+        <view class="td1" id="tr11">
+            <text>Wed</text>
+            <text>xx-xx</text>
+        </view>
+        <view class="td1" id="tr12">
+            <text>Thu</text>
+            <text>xx-xx</text>
+        </view>
+        <view class="td1" id="tr11">
+            <text>Fri</text>
+            <text>xx-xx</text>
+        </view>
+        <view class="td1" id="tr12">
+            <text>Sat</text>
+            <text>xx-xx</text>
+        </view>
+    </view>
+    <view class="table2">
+        <view class="col">
+            <view class="td2">
+                <text>1</text>
+                <text>8:00</text>
+                <text>|</text>
+                <text>8:45</text>
+            </view>
+            <view class="td2">
+                <text>2</text>
+                <text>8:55</text>
+                <text>|</text>
+                <text>9:40</text>
+            </view>
+            <view class="td2">
+                <text>3</text>
+                <text>10:00</text>
+                <text>|</text>
+                <text>10:45</text>
+            </view>
+            <view class="td2">
+                <text>4</text>
+                <text>10:55</text>
+                <text>|</text>
+                <text>11:40</text>
+            </view>
+            <view class="td2">
+                <text>5</text>
+                <text>11:50</text>
+                <text>|</text>
+                <text>12:35</text>
+            </view>
+            <view class="td2">
+                <text>6</text>
+                <text>14:00</text>
+                <text>|</text>
+                <text>14:45</text>
+            </view>
+            <view class="td2">
+                <text>7</text>
+                <text>14:55</text>
+                <text>|</text>
+                <text>15:40</text>
+            </view>
+            <view class="td2">
+                <text>8</text>
+                <text>16:00</text>
+                <text>|</text>
+                <text>16:45</text>
+            </view>
+            <view class="td2">
+                <text>9</text>
+                <text>16:55</text>
+                <text>|</text>
+                <text>17:40</text>
+            </view>
+            <view class="td2">
+                <text>0</text>
+                <text>17:50</text>
+                <text>|</text>
+                <text>18:35</text>
+            </view>
+            <view class="td2">
+                <text>A</text>
+                <text>19:20</text>
+                <text>|</text>
+                <text>20:05</text>
+            </view>
+            <view class="td2">
+                <text>B</text>
+                <text>20:15</text>
+                <text>|</text>
+                <text>21:00</text>
+            </view>
+            <view class="td2">
+                <text>C</text>
+                <text>21:10</text>
+                <text>|</text>
+                <text>21:55</text>
+            </view>
+        </view>
+        <view class="table3">
+            <view class="{{abs127}}">
+                <view class="abitem" style="background-color:{{bc127}}" wx:for="{{it127}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs347}}">
+                <view class="abitem" style="background-color: {{bc347}}" wx:for="{{it347}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs57}}">
+                <view class="abitem" style="background-color: {{bc57}}" wx:for="{{it57}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs677}}">
+                <view class="abitem" style="background-color: {{bc677}}" wx:for="{{it677}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs897}}">
+                <view class="abitem" style="background-color: {{bc897}}" wx:for="{{it897}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs07}}">
+                <view class="abitem" style="background-color: {{bc07}}" wx:for="{{it07}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absAB7}}">
+                <view class="abitem" style="background-color: {{bcAB7}}" wx:for="{{itAB7}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absC7}}">
+                <view class="abitem" style="background-color: {{bcC7}}" wx:for="{{itC7}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs121}}">
+                <view class="abitem" style="background-color: {{bc121}}" wx:for="{{it121}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs341}}">
+                <view class="abitem" style="background-color: {{bc341}}" wx:for="{{it341}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs51}}">
+                <view class="abitem" style="background-color: {{bc51}}" wx:for="{{it51}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs671}}">
+                <view class="abitem" style="background-color: {{bc671}}" wx:for="{{it671}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs891}}">
+                <view class="abitem" style="background-color: {{bc891}}" wx:for="{{it891}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs01}}">
+                <view class="abitem" style="background-color: {{bc01}}" wx:for="{{it01}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absAB1}}">
+                <view class="abitem" style="background-color: {{bcAB1}}" wx:for="{{itAB1}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absC1}}">
+                <view class="abitem" style="background-color: {{bcC1}}" wx:for="{{itC1}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs122}}">
+                <view class="abitem" style="background-color: {{bc122}}" wx:for="{{it122}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs342}}">
+                <view class="abitem" style="background-color: {{bc342}}" wx:for="{{it342}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs52}}">
+                <view class="abitem" style="background-color: {{bc52}}" wx:for="{{it52}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs672}}">
+                <view class="abitem" style="background-color: {{bc672}}" wx:for="{{it672}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs892}}">
+                <view class="abitem" style="background-color: {{bc892}}" wx:for="{{it892}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs02}}">
+                <view class="abitem" style="background-color: {{bc02}}" wx:for="{{it02}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absAB2}}">
+                <view class="abitem" style="background-color: {{bcAB2}}" wx:for="{{itAB2}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absC2}}">
+                <view class="abitem" style="background-color: {{bcC2}}" wx:for="{{itC2}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs123}}">
+                <view class="abitem" style="background-color: {{bc123}}" wx:for="{{it123}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs343}}">
+                <view class="abitem" style="background-color: {{bc343}}" wx:for="{{it343}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs53}}">
+                <view class="abitem" style="background-color: {{bc53}}" wx:for="{{it53}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs673}}">
+                <view class="abitem" style="background-color: {{bc673}}" wx:for="{{it673}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs893}}">
+                <view class="abitem" style="background-color: {{bc893}}" wx:for="{{it893}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs03}}">
+                <view class="abitem" style="background-color: {{bc03}}" wx:for="{{it03}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absAB3}}">
+                <view class="abitem" style="background-color: {{bcAB3}}" wx:for="{{itAB3}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absC3}}">
+                <view class="abitem" style="background-color: {{bcC3}}" wx:for="{{itC3}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs124}}">
+                <view class="abitem" style="background-color: {{bc124}}" wx:for="{{it124}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs344}}">
+                <view class="abitem" style="background-color: {{bc344}}" wx:for="{{it344}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs54}}">
+                <view class="abitem" style="background-color: {{bc54}}" wx:for="{{it54}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs674}}">
+                <view class="abitem" style="background-color: {{bc674}}" wx:for="{{it674}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs894}}">
+                <view class="abitem" style="background-color: {{bc894}}" wx:for="{{it894}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs04}}">
+                <view class="abitem" style="background-color: {{bc04}}" wx:for="{{it04}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absAB4}}">
+                <view class="abitem" style="background-color: {{bcAB4}}" wx:for="{{itAB4}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absC4}}">
+                <view class="abitem" style="background-color: {{bcC4}}" wx:for="{{itC4}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs125}}">
+                <view class="abitem" style="background-color: {{bc125}}" wx:for="{{it125}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs345}}">
+                <view class="abitem" style="background-color: {{bc345}}" wx:for="{{it345}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs55}}">
+                <view class="abitem" style="background-color: {{bc55}}" wx:for="{{it55}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs675}}">
+                <view class="abitem" style="background-color: {{bc675}}" wx:for="{{it675}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs895}}">
+                <view class="abitem" style="background-color: {{bc895}}" wx:for="{{it895}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs05}}">
+                <view class="abitem" style="background-color: {{bc05}}" wx:for="{{it05}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absAB5}}">
+                <view class="abitem" style="background-color: {{bcAB5}}" wx:for="{{itAB5}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absC5}}">
+                <view class="abitem" style="background-color: {{bcC5}}" wx:for="{{itC5}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs126}}">
+                <view class="abitem" style="background-color: {{bc126}}" wx:for="{{it126}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs346}}">
+                <view class="abitem" style="background-color: {{bc346}}" wx:for="{{it346}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs56}}">
+                <view class="abitem" style="background-color: {{bc56}}" wx:for="{{it56}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs676}}">
+                <view class="abitem" style="background-color: {{bc676}}" wx:for="{{it676}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs896}}">
+                <view class="abitem" style="background-color: {{bc896}}" wx:for="{{it896}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{abs06}}">
+                <view class="abitem" style="background-color: {{bc06}}" wx:for="{{it06}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absAB6}}">
+                <view class="abitem" style="background-color: {{bcAB6}}" wx:for="{{itAB6}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+            <view class="{{absC6}}">
+                <view class="abitem" style="background-color: {{bcC6}}" wx:for="{{itC6}}">
+                    <view class="ittext">{{item.name}}</view>
+                    <view class="ittext">{{item.address}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

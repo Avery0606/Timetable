@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/page2/page2",
+    "pages/page1/page1"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}
