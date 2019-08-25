@@ -243,7 +243,7 @@ Page({
       var that = this;
         var temp=[];
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="7")&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="7")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -262,7 +262,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="7")&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="7")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -281,7 +281,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="7")&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="7")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -300,7 +300,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="7")&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="7")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -319,7 +319,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="7")&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="7")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -338,7 +338,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="7")&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="7")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -357,7 +357,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="7")&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="7")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -376,7 +376,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="7")&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="7")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -395,7 +395,7 @@ Page({
             }
         }//7
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="1")&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="1")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -414,7 +414,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="1")&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="1")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -433,7 +433,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="1")&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="1")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -452,7 +452,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="1")&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="1")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -471,7 +471,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="1")&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="1")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -490,7 +490,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="1")&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="1")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -509,7 +509,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="1")&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="1")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -528,7 +528,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="1")&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="1")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -547,7 +547,7 @@ Page({
             }
         }//1
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="2")&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="2")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -566,7 +566,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="2")&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="2")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -585,7 +585,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="2")&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="2")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -604,7 +604,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="2")&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="2")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -623,7 +623,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="2")&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="2")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -642,7 +642,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="2")&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="2")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -661,7 +661,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="2")&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="2")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -680,7 +680,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="2")&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="2")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -699,7 +699,7 @@ Page({
             }
         }//2
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="3")&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="3")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -718,7 +718,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="3")&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="3")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -737,7 +737,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="3")&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="3")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -756,7 +756,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="3")&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="3")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -775,7 +775,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="3")&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="3")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -794,7 +794,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="3")&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="3")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -813,7 +813,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="3")&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="3")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -832,7 +832,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="3")&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="3")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -851,7 +851,7 @@ Page({
             }
         }//3
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="4")&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="4")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -870,7 +870,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="4")&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="4")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -889,7 +889,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="4")&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="4")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -908,7 +908,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="4")&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="4")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -927,7 +927,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="4")&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="4")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -946,7 +946,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="4")&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="4")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -965,7 +965,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="4")&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="4")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -984,7 +984,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="4")&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="4")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1003,7 +1003,7 @@ Page({
             }
         }//4
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="5")&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="5")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1022,7 +1022,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="5")&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="5")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1041,7 +1041,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="5")&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="5")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1060,7 +1060,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="5")&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="5")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1079,7 +1079,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="5")&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="5")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1098,7 +1098,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="5")&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="5")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1117,7 +1117,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="5")&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="5")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1136,7 +1136,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="5")&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="5")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1155,7 +1155,7 @@ Page({
             }
         }//5
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="6")&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="6")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="1,2")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1174,7 +1174,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="6")&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="6")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1193,7 +1193,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="6")&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="6")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="3,4,5")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1212,7 +1212,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="6")&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="6")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="6,7")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1231,7 +1231,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="6")&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="6")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1250,7 +1250,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="6")&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="6")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="8,9,0")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1269,7 +1269,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="6")&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="6")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
@@ -1288,7 +1288,7 @@ Page({
             }
         }
         for(var i=0;i<that.data.list.length;i++){
-            if((that.data.list[i].date==="6")&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
+            if((that.data.list[i].date==="6")&&((that.data.list[i].sdw=="0")||(that.data.list[i].sdw==(that.data.weeknum%2)))&&(that.data.list[i].time==="A,B,C")&&(that.data.list[i].week[0]<=that.data.weeknum)&&(that.data.list[i].week[1]>=that.data.weeknum)){
                 temp.push(that.data.list[i]);
                 console.log(temp);
                 that.setData({
